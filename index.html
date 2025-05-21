@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">MIRADIL</div>
+                <nav>
+                    <ul>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>Привет, я <span class="name-highlight">Азамат</span></h1>
+                    <p class="subtitle"> Веб-разработчик и Фронтенд-разработчик</p>
+                    <p class="description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary">Связаться</a>
+                        <a href="#projects" class="btn secondary">Мои работы</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    
+                    <img src="./img/аниме3.jpg" alt="Азамат">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <a href="https://azamat233004.github.io/Metrika2/" target="_blank">
+                      
+                        <img src="./img/Снимок экрана 2025-05-21 213823.png" alt="Метрика">
+                        <h3>Метрика</h3>
+                        <p>Создание современного и стильного сайта для студии дизайна интерьеров “InSpace”, который будет представлять услуги по оформлению квартир, домов и коммерческих помещений, а также демонстрировать портфолио, отзывы и конта</p>
+                    </a>
+                </div>
+                
+                
+                <div class="project-card">
+                    <a href="https://azamat233004.github.io/TRafalgar2/" target="_blank">
+                      
+                        <img src="./img/Снимок экрана 2025-05-21 213923.png" alt="TRAFALGAR">
+                        <h3>TRAFALGAR</h3>
+                        <p>Создание простого и привлекательного сайта для больницы "trafalgar”, который будет информировать клиентов о больнице, часах работы и местоположении.</p>
+                    </a>
+                </div>
+                
+               
+                <div class="project-card">
+                    <a href="https://peaceful-daifuku-cd3cb4.netlify.app/" target="_blank">
+                        
+                        <img src="./img/Снимок экрана 2025-05-21 214003.png" alt="Проект 3">
+                        <h3>MARVEL</h3>
+                        <p>Создание простого и привлекательного сайта для Хакатона 
+на тему супер-герои</p>
+                    </a>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-image">
+              
+                    <img src="./img/аниме1.jpg" alt="Азамат">
+                </div>
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    <p>Привет! Меня зовут Азамат, я начинающий фронтенд-разработчик и школьник 8 класса. Увлекаюсь созданием современных, адаптивных и удобных сайтов. На данный момент активно изучаю HTML, CSS и JavaScript, а также работаю с конструкторами сайтов, такими как Tilda.</p>
+                    <ul>
+                        <li>Мой путь:
+                            <p>	Начал изучать веб-разработку с простых лендингов и постепенно перешёл к более сложным проектам, таким как блог-платформы и игровые сайты.
+	Участвую в хакатонах и создаю проекты, ориентированные на реальные задачи.</p>
+                        </li>
+                        <li>Навыки:
+                            <p>•	HTML5, CSS3, JavaScript <br>
+	•	Работа с localStorage <br>
+	•	Адаптивная вёрстка под мобильные устройства <br>
+	•	Пользовательский интерфейс и UX-дизайн <br>
+	•	Работа с Tilda и визуальными конструкторами</p>
+                        </li>
+                        <li>Подход к роботе:
+                            <p>Я люблю, когда всё чётко: красивый код, аккуратный дизайн, отзывчивость интерфейса и логика работы сайта. Учусь новому каждый день и стараюсь применять полученные знания на практике. Открыт к сотрудничеству и постоянно улучшаю свои навыки.</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь со мной</h2>
+            <div class="contact-inner">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:ваш@email.com">miradilazamat963@email.com</a></p>
+                    <p>Телефон: <a href="tel:+79001234567">+7 (707) 299-88-33</a></p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link">GitHub</a>
+                        <a href="#" target="_blank" class="social-link">Behance</a>
+                        <a href="#" target="_blank" class="social-link">Instagram</a>
+                        <a href="#" target="_blank" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Азамат. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0F0F0F;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.btn.primary {
+    background-color: #3A86FF;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #2667CC;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #3A86FF;
+    border: 1px solid #3A86FF;
+}
+
+.btn.secondary:hover {
+    background-color: rgba(58, 134, 255, 0.1);
+}
+
+/* Шапка */
+header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 15, 15, 0.9);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A86FF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3A86FF;
+}
+
+/* Герой секция */
+.hero {
+    padding: 180px 0 100px;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.name-highlight {
+    color: #3A86FF;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Секция проектов */
+.projects {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #3A86FF;
+    margin: 15px auto 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 20px;
+}
+
+.project-card p {
+    padding: 0 20px 20px;
+    color: #aaa;
+}
+
+/* Секция "Обо мне" */
+.about {
+    padding: 100px 0;
+    background-color: #1A1A1A;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-text h2::after {
+    margin: 15px 0 0;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.about-text ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: x-large;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+/* Секция контактов */
+.contact {
+    padding: 100px 0;
+}
+
+.contact-inner {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #1A1A1A;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 30px;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3A86FF;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.contact-info a {
+    color: #3A86FF;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-link:hover {
+    background-color: #3A86FF;
+}
+
+/* Подвал */
+footer {
+    padding: 30px 0;
+    background-color: #1A1A1A;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .hero-inner,
+    .about-inner,
+    .contact-inner {
+        flex-direction: column;
+    }
+    
+    .hero-image,
+    .about-image {
+        margin-top: 40px;
+    }
+    
+    .hero {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
